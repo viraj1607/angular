@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductModel } from '../model/product';
 
 @Component({
   selector: 'product',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './product.css'
 })
 export class Product {
-  name:string="Samsung Mobile";
-  price:number=1000;
+  product!: ProductModel
+
+  constructor(){
+    this.product=new ProductModel(1,"Samsung Mobile",1000)
+  }
 }
