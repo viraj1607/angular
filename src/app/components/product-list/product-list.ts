@@ -13,9 +13,8 @@ export class ProductList {
 
   constructor() {
     this.products = [
-      new ProductModel(1, 'Samsung Mobile', 1000, 'some description', false),
+      new ProductModel('Samsung Mobile', 1000, 'some description', false),
       new ProductModel(
-        2,
         'Apple iPhone 14',
         1200,
         'Latest iPhone with A15 Bionic chip',
@@ -23,7 +22,6 @@ export class ProductList {
       ),
 
       new ProductModel(
-        3,
         'Dell Inspiron Laptop',
         850,
         '15.6-inch display, 8GB RAM, 512GB SSD',
@@ -31,7 +29,6 @@ export class ProductList {
       ),
 
       new ProductModel(
-        4,
         'Sony WH-1000XM5 Headphones',
         350,
         'Noise-cancelling wireless headphones',
@@ -39,7 +36,6 @@ export class ProductList {
       ),
 
       new ProductModel(
-        5,
         'Samsung Smart TV 55"',
         999,
         '4K UHD LED Smart TV with HDR',
